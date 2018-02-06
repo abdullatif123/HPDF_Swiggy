@@ -11,7 +11,7 @@ export default class Cart extends React.Component {
    }
  render() {
      return(
-        <Container>
+        <Container style={{backgroundColor:'white'}}>
         <View>
             </View>
        

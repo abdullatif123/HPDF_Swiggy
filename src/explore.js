@@ -11,7 +11,7 @@ export default class Explore extends React.Component {
    }
  render() {
      return(
-        <Container>
+        <Container style={{backgroundColor:'white'}}>
         <Header style={{backgroundColor:'white'}}>
          
          

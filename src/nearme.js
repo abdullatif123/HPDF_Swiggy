@@ -68,7 +68,7 @@ export default class Nearme extends React.Component {
  render() {
 
      return(
-        <Container>
+        <Container style={{backgroundColor:'white'}}>
             
             <Picker
             style={{}}
@@ -83,7 +83,7 @@ export default class Nearme extends React.Component {
             <Picker.Item label="Kolkata" value="Kolkata"/>
 
             </Picker>
-            <Button title="Search Restaurants"  onPress={this.clickme} />
+            <Button title="Search Restaurants" color="orange" onPress={this.clickme} />
 
             
         
