@@ -1,11 +1,42 @@
 import React, { Component } from 'react';
-import {Text,View,Button,Image,AppRegistry,ScrollView,Picker} from 'react-native';
+import {Text,View,Button,Image,AppRegistry,ScrollView,Picker, TouchableWithoutFeedback} from 'react-native';
 import {Icon,Container,Header,Left,Body,Content,Input,Right,Item} from 'native-base';
+import Qmenu from './menu/qmenu.js';
+import Artmenu from './menu/artmenu.js';
+import Smenu from './menu/smenu.js';
+import Thmenu from './menu/thmenu.js';
+import Nmenu from './menu/nmenu.js';
+import Rmenu from './menu/rmenu.js';
 
 
 
 
 export default class Delhi extends React.Component {
+    constructor(){
+        super();
+        this.state={
+            State:''
+   
+         }
+       };
+       onPress = () => {
+        this.props.navigation.navigate('Qmenu');
+      }
+       abc = () => {
+        this.props.navigation.navigate('Artmenu');
+       }
+       klm = () => {
+        this.props.navigation.navigate('Smenu');
+       }
+       x = () => {
+        this.props.navigation.navigate('Thmenu');
+       }
+       y = () => {
+        this.props.navigation.navigate('Nmenu');
+       }
+       z = () => {
+        this.props.navigation.navigate('Rmenu');
+       }
     render(){
         return(
 <Container>
@@ -16,7 +47,8 @@ export default class Delhi extends React.Component {
 </Header>
      
      
-     <ScrollView style={{backgroundColor:"white"}}>     
+     <ScrollView style={{backgroundColor:"white"}}>   
+     <TouchableWithoutFeedback  onPress={this.onPress}>  
      <View style={{flexDirection:'row'}}>
          <Image source={require('./images/qd.png')} style={{height:120,width:120,marginRight:20,
             marginBottom:20,marginLeft:20,marginTop:10}} />
@@ -40,9 +72,11 @@ export default class Delhi extends React.Component {
              </View>
          </View>
          </View>
+         </TouchableWithoutFeedback>
 
 
-
+         
+         <TouchableWithoutFeedback onPress={this.abc}>
          <View style={{flexDirection:'row'}}>
          <Image source={require('./images/art.png')} style={{height:120,width:120,marginRight:20,
             marginBottom:20,marginLeft:20}} />
@@ -66,10 +100,13 @@ export default class Delhi extends React.Component {
              </View>
          </View>
          </View>
+         </TouchableWithoutFeedback>
 
 
 
          
+           
+         <TouchableWithoutFeedback onPress={this.klm}>
          <View style={{flexDirection:'row'}}>
          <Image source={require('./images/sahi.png')} style={{height:120,width:120,marginRight:20,
             marginBottom:20,marginLeft:20}} />
@@ -93,11 +130,13 @@ export default class Delhi extends React.Component {
              </View>
          </View>
          </View>
+         </TouchableWithoutFeedback>
 
 
 
 
          
+         <TouchableWithoutFeedback onPress={this.x}>
          <View style={{flexDirection:'row'}}>
          <Image source={require('./images/hudson.png')} style={{height:120,width:120,marginRight:20,
             marginBottom:20,marginLeft:20}} />
@@ -121,11 +160,13 @@ export default class Delhi extends React.Component {
              </View>
          </View>
          </View>
+         </TouchableWithoutFeedback>
 
 
 
 
          
+         <TouchableWithoutFeedback onPress={this.y}>
          <View style={{flexDirection:'row'}}>
          <Image source={require('./images/tera.png')} style={{height:120,width:120,marginRight:20,
             marginBottom:20,marginLeft:20}} />
@@ -149,11 +190,13 @@ export default class Delhi extends React.Component {
              </View>
          </View>
          </View>
+         </TouchableWithoutFeedback>
 
 
 
 
          
+         <TouchableWithoutFeedback onPress={this.z}>
          <View style={{flexDirection:'row'}}>
          <Image source={require('./images/ricos.jpg')} style={{height:120,width:120,marginRight:20,
             marginBottom:20,marginLeft:20}} />
@@ -177,6 +220,7 @@ export default class Delhi extends React.Component {
              </View>
          </View>
          </View>
+         </TouchableWithoutFeedback>
          
          
 

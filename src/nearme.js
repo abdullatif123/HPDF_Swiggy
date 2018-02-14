@@ -3,8 +3,6 @@ import {Text,View,Button,Image,AppRegistry,ScrollView,Picker} from 'react-native
 import {Icon,Container,Header,Left,Body,Content,Input,Right,Item} from 'native-base';
 import Delhi from './delhi.js';
 import Mumbai from './mumbai.js';
-import Chennai from './chennai.js';
-import Kanpur from './kanpur.js';
 import Kolkata from './kolkata.js';
 import Explore from './explore.js';
 import {
@@ -35,16 +33,6 @@ export default class Nearme extends React.Component {
         {
            // this.navigator.push({Page: Delhi , props: yourprops});
            this.props.navigation.navigate('Mumbai');
-        }
-        else if(data=="Chennai")
-        {
-           // this.navigator.push({Page: Delhi , props: yourprops});
-           this.props.navigation.navigate('Chennai');
-        }
-        else if(data=="Kanpur")
-        {
-           // this.navigator.push({Page: Delhi , props: yourprops});
-           this.props.navigation.navigate('Kanpur');
         }
         else if(data=="Kolkata")
         {
@@ -78,8 +66,6 @@ export default class Nearme extends React.Component {
             <Picker.Item label="Select your location" value=" "/>
             <Picker.Item label="Mumbai" value="Mumbai"/>
             <Picker.Item label="Delhi" value="Delhi"/>
-            <Picker.Item label="Chennai" value="Chennai"/>
-            <Picker.Item label="Kanpur" value="Kanpur"/>
             <Picker.Item label="Kolkata" value="Kolkata"/>
 
             </Picker>
