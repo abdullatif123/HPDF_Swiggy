@@ -230,7 +230,7 @@ export default class Mumbai extends React.Component {
 
          <TouchableWithoutFeedback onPress={this.xyz}> 
          <View style={{flexDirection:'row'}}>
-         <Image source={require('./images/k.png')} style={{height:120,width:120,marginRight:20,
+         <Image source={require('./images/s.png')} style={{height:120,width:120,marginRight:20,
             marginBottom:20,marginLeft:20}} />
      
          <View  style={{flexDirection:'column'}}>

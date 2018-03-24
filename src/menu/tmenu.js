@@ -31,7 +31,7 @@ export default class Tmenu extends React.Component {
             <View style={{flexDirection:'row'}}>
             <Image source={require('./../images/penne.jpg')} style={{height:150,width:190,
              marginLeft:20,marginRight:30,marginBottom:20}}/>
-             <Image source={require('./../images/k.jpg')} style={{height:150,width:190,
+             <Image source={require('./../images/kal.jpg')} style={{height:150,width:190,
              marginRight:0,marginBottom:20}}/>             
             </View>
             <View style={{flexDirection:'row'}}>
@@ -60,7 +60,7 @@ export default class Tmenu extends React.Component {
              <View style={{flexDirection:'row',marginTop:20}}>
              <Image source={require('./../images/penne.jpg')} style={{height:150,width:190,
              marginLeft:20,marginRight:30,marginBottom:20}}/>
-             <Image source={require('./../images/k.jpg')} style={{height:150,width:190,
+             <Image source={require('./../images/kal.jpg')} style={{height:150,width:190,
              marginRight:0,marginBottom:20}}/>             
             </View>
             <View style={{flexDirection:'row'}}>
@@ -89,7 +89,7 @@ export default class Tmenu extends React.Component {
              <View style={{flexDirection:'row',marginTop:20}}>
              <Image source={require('./../images/penne.jpg')} style={{height:150,width:190,
              marginLeft:20,marginRight:30,marginBottom:20}}/>
-             <Image source={require('./../images/k.jpg')} style={{height:150,width:190,
+             <Image source={require('./../images/kal.jpg')} style={{height:150,width:190,
              marginRight:0,marginBottom:20}}/>             
             </View>
             <View style={{flexDirection:'row'}}>
